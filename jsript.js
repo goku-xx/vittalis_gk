@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   const hamburgerBtn = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.show');
-  var body = document.body;
+  
   
   // Function to toggle the display of the .show class
   function toggleShowClass() {
@@ -10,8 +10,14 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Add event listener for hamburger button click
-  hamburgerBtn.addEventListener('click', function() {
+  hamburgerBtn.addEventListener('click', function(event) {
+    event.stopPropagation();
     toggleShowClass();
+  });
+
+  // Add event listener to body to hide mobile show on outside click
+  document.body.addEventListener('click', function() {
+    navLinks.classList.remove('mobile-show');
   });
 
   // Add event listener for window resize

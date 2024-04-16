@@ -28,9 +28,21 @@ body {
 .food_img{
     border-radius: 10px;
     border:#333 solid;
-    width: 50%;
-    height: auto;
 }
+footer {
+    background-color: #333; /* Grey background color */
+    color: white; /* Text color */
+    padding: 20px 0; /* Add some padding for spacing */
+    position: sticky; /* Fix the footer to the bottom of the viewport */
+    width: 100%; /* Full width */
+    bottom: 0; /* Stick to the bottom */
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto; /* Center the content horizontally */
+  }
+  
 .menu-options {
     position: relative;
   }
@@ -172,7 +184,7 @@ ul{
     .show {
         display: flex;
     }
-    .food_img{
-        width: 80%;
-    }
+    /* .food_img{ */
+        /* width: 80%; */
+    /* } */
   } 
