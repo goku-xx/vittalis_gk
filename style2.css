@@ -18,15 +18,18 @@ body {
 
 
 .brand-name{
-    color: wheat;
+    color: rgb(246, 242, 243);
     text-decoration: none;
     font-size: 150%;
     font-weight: bold;
+    text-transform: initial;
 }
 
 .food_img{
     border-radius: 10px;
     border:#333 solid;
+    width: 50%;
+    height: auto;
 }
 .menu-options {
     position: relative;
@@ -168,5 +171,8 @@ ul{
   @media only screen and (min-width: 768px) {
     .show {
         display: flex;
+    }
+    .food_img{
+        width: 80%;
     }
   } 
