@@ -28,6 +28,45 @@ body {
     border-radius: 10px;
     border:#333 solid;
 }
+.menu-options {
+    position: relative;
+  }
+  
+  .menu-options img {
+    border-radius: 10px;
+    border: 2px solid #333;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .menu-options button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-options button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  #prevBtn {
+    left: 10px;
+  }
+  
+  #nextBtn {
+    right: 10px;
+  }
+  
 
 .nav-container{
     display: flex;
