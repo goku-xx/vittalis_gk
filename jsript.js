@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Function to open modal and show enlarged image on mobile
   menuImage.addEventListener('click', function() {
-    if (window.innerWidth <= 768) { // Check for mobile view
+    if (window.innerWidth <= 800) { // Check for mobile view
       // Show enlarged image
       const modal = document.createElement('div');
       modal.classList.add('modal');
