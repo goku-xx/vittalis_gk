@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Add event listener for window resize
   window.addEventListener('resize', function() {
     // Check if window width is greater than 768px
-    if (window.innerWidth > 800) {
+    if (window.innerWidth > 768) {
       // Hide the .show class
       navLinks.classList.remove('mobile-show');
     }

@@ -157,7 +157,7 @@ ul {
 }
 
 
-@media only screen and (max-width: 802px) {
+@media only screen and (max-width: 768px) {
     .show{
         display: none;
     }
@@ -190,7 +190,7 @@ ul {
     }
     
   }
-  @media only screen and (min-width: 800px) {
+  @media only screen and (min-width: 767px) {
     .show {
         display: flex;
     }
