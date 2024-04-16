@@ -1,9 +1,7 @@
-// Existing JavaScript code
 document.addEventListener('DOMContentLoaded', function() {
   const hamburgerBtn = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.show');
-  
-  
+
   // Function to toggle the display of the .show class
   function toggleShowClass() {
     navLinks.classList.toggle('mobile-show');
@@ -25,11 +23,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check if window width is greater than 768px
     if (window.innerWidth > 768) {
       // Hide the .show class
-      showClass.style.display = 'none';
+      navLinks.classList.remove('mobile-show');
     }
   });
 
-  // New JavaScript code for food menu functionality
+  // Food menu functionality
   const menuImage = document.getElementById('menuImage');
   const prevBtn = document.getElementById('prevBtn');
   const nextBtn = document.getElementById('nextBtn');
@@ -61,7 +59,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Show the initial image
   showCurrentImage();
+
+  // Function to open modal and show enlarged image on mobile
+  menuImage.addEventListener('click', function() {
+    if (window.innerWidth <= 768) { // Check for mobile view
+      // Show enlarged image
+      const modal = document.createElement('div');
+      modal.classList.add('modal');
+      modal.innerHTML = `
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="${images[currentImageIndex]}" class="enlarged-image">
+        </div>
+      `;
+      document.body.appendChild(modal);
+
+      // Close modal when clicking on close button
+      const closeButton = modal.querySelector('.close');
+      closeButton.addEventListener('click', function() {
+        document.body.removeChild(modal);
+      });
+    }
+  });
 });
+
 // JavaScript function to open default email client
 function openEmailClient() {
   window.location.href = "mailto:vitalis@gmail.com"; // Replace with your email address
