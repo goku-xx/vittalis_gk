@@ -184,7 +184,7 @@ ul{
     .show {
         display: flex;
     }
-    /* .food_img{ */
-        /* width: 80%; */
-    /* } */
+     .food_img{ 
+         width: 50%; 
+    }
   } 
