@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* width: 100vw;  */
+  }
+body {
+    background-image: url('https://images.pexels.com/photos/1435909/pexels-photo-1435909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    /* Corrected the URL for background image */
+    background-color: rgb(238, 238, 240);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+
+.brand-name{
+    color: wheat;
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+
+  
+
+
+  
+
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #333;;
+    /* width: 100%; */
+    padding: 1%;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    border-radius: 30%;
+    width: 10%;
+    height: 5%;
+    margin-right: 10px;
+}
+.nav-right{
+    width: 80%;
+}
+
+ul{
+    list-style: none;
+}
+
+.show{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.show li{
+    padding: 1%;
+}
+
+.nav-links{
+    text-decoration: none;
+    color:white;
+}
+
+.show li:hover{
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+.hamburger path {
+    fill: white; 
+    /* Change the color to your desired color */
+}
+
+.hamburger-holder{
+    width: 25px;
+}
+
+.hamburger{
+    display: none;
+    width: 25px;
+    height: 25px;
+    margin-right: 0;
+}
+
+
+@media only screen and (max-width: 806px) {
+    .show{
+        display: none;
+    }
+
+    .hamburger{
+        display: flex;
+
+    }
+
+    .nav-right{
+        width: 30px;
+        margin-right: 3%;
+    }
+
+    .mobile-show {
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: grey;
+        flex-direction: column;
+        width: 60%;
+        height: 30%;
+        border-radius: 10px;
+        padding: 2%;
+    }
+    
+  }
+  @media only screen and (min-width: 768px) {
+    .show {
+        display: flex;
+    }
+  } 
