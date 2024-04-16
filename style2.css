@@ -5,7 +5,7 @@
     /* width: 100vw;  */
   }
 body {
-    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-food-western-food-steak-tomato-image_25128.jpg');
+    /* background-image: url('https://img.freepik.com/free-psd/american-food-outline-illustration_23-2150755581.jpg'); */
     /* Corrected the URL for background image */
     background-color: rgb(238, 238, 240);
     background-size: cover;
@@ -44,6 +44,7 @@ footer {
     align-items: center;
   }
   
+
 .menu-options {
     position: relative;
   }
@@ -108,9 +109,17 @@ footer {
     width: 80%;
 }
 
-ul{
+ul {
+    align-items: center;
     list-style: none;
-}
+    justify-content: center;
+  }
+  
+  li {
+    text-align: justify; 
+    
+  }
+  
 
 .show{
     display: flex;
@@ -233,12 +242,15 @@ ul{
   
   /* Updated CSS for the contact section */
 .contact-info {
-    color: #333;
+    color: #040404;
     margin-bottom: 20px; /* Add margin to create space between sections */
+    font-size:large;
+    font-weight: bold;
   }
   
   .contact-info p {
     margin: 10px 0;
+    font-display: flex;
   }
   
   .email-option {
@@ -249,8 +261,8 @@ ul{
   }
   
   .email-icon {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     background-image: url('https://seeklogo.com/images/M/mail-envelope-symbol-logo-4AB011B4E0-seeklogo.com.png');
     background-size: contain;
     background-repeat: no-repeat;
