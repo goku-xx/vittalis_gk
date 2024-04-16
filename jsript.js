@@ -62,24 +62,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Function to open modal and show enlarged image on mobile
   menuImage.addEventListener('click', function() {
-    if (window.innerWidth <= 800) { // Check for mobile view
-      // Show enlarged image
-      const modal = document.createElement('div');
-      modal.classList.add('modal');
-      modal.innerHTML = `
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <img src="${images[currentImageIndex]}" class="enlarged-image">
-        </div>
-      `;
-      document.body.appendChild(modal);
+    // Show enlarged image
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+    modal.innerHTML = `
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="${images[currentImageIndex]}" class="enlarged-image">
+      </div>
+    `;
+    document.body.appendChild(modal);
 
-      // Close modal when clicking on close button
-      const closeButton = modal.querySelector('.close');
-      closeButton.addEventListener('click', function() {
-        document.body.removeChild(modal);
-      });
-    }
+    // Close modal when clicking on close button
+    const closeButton = modal.querySelector('.close');
+    closeButton.addEventListener('click', function() {
+      document.body.removeChild(modal);
+    });
   });
 });
 
