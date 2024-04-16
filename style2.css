@@ -25,11 +25,12 @@ body {
 }
 
 .food_img{
-    height: 1%;
-    width: 20%;
+    height: 10%;
+    width: 30%;
     border-radius: 10px;
     border:#333 solid;
 }
+
 .nav-container{
     display: flex;
     justify-content: space-between;
@@ -42,7 +43,7 @@ body {
 .nav-left{
     display: flex;
     align-items: center;
-}
+} 
 
 .logo{
     border-radius: 30%;
