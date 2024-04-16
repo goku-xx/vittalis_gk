@@ -5,7 +5,7 @@
     /* width: 100vw;  */
   }
 body {
-    background-image: url('https://images.pexels.com/photos/1435909/pexels-photo-1435909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    /* background-image: url('https://images.pexels.com/photos/1435909/pexels-photo-1435909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
     /* Corrected the URL for background image */
     background-color: rgb(238, 238, 240);
     background-size: cover;
@@ -24,13 +24,12 @@ body {
     font-weight: bold;
 }
 
-
-  
-
-
-  
-
-
+.food_img{
+    height: 1%;
+    width: 20%;
+    border-radius: 10px;
+    border:#333 solid;
+}
 .nav-container{
     display: flex;
     justify-content: space-between;
