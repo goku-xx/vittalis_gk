@@ -62,3 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Show the initial image
   showCurrentImage();
 });
+// JavaScript function to open default email client
+function openEmailClient() {
+  window.location.href = "mailto:vitalis@gmail.com"; // Replace with your email address
+}

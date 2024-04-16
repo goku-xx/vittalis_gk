@@ -41,6 +41,7 @@ footer {
   .container {
     width: 80%;
     margin: 0 auto; /* Center the content horizontally */
+    align-items: center;
   }
   
 .menu-options {
@@ -185,6 +186,78 @@ ul{
         display: flex;
     }
      .food_img{ 
-         width: 50%; 
+         width: 30%; 
     }
-  } 
+  }
+  /* New CSS for the contact section */
+/* Updated CSS for the contact section */
+.mailbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .envelope {
+    position: relative;
+    width: 200px;
+    height: 120px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+  }
+  
+  .envelope-content {
+    padding: 20px;
+  }
+  
+  .stamp {
+    width: 40px;
+    height: 40px;
+    background-color: #f9a825; /* Yellow color */
+    border-radius: 50%;
+  }
+  
+  .letter {
+    margin-top: 10px;
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    overflow: auto; /* Enable scrolling if content exceeds the box height */
+  }
+  
+  .letter p {
+    margin: 5px 0;
+  }
+  
+  /* Updated CSS for the contact section */
+.contact-info {
+    color: #333;
+    margin-bottom: 20px; /* Add margin to create space between sections */
+  }
+  
+  .contact-info p {
+    margin: 10px 0;
+  }
+  
+  .email-option {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    flex-direction: column; /* Stack items vertically */
+  }
+  
+  .email-icon {
+    width: 50px;
+    height: 50px;
+    background-image: url('https://seeklogo.com/images/M/mail-envelope-symbol-logo-4AB011B4E0-seeklogo.com.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  
+  .email-option p {
+    margin-top: 10px; /* Add space between email icon and text */
+  }
+  
